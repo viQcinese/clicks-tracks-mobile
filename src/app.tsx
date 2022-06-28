@@ -1,12 +1,12 @@
 import { registerRootComponent } from 'expo';
 import { NativeBaseProvider } from 'native-base';
-import { Text } from 'react-native';
 import { theme } from './style/theme';
+import Feed from './views/Feed';
 
 function App() {
   return (
     <NativeBaseProvider theme={theme}>
-      <Text>Hello</Text>
+      <Feed />
     </NativeBaseProvider>
   );
 }
